@@ -12,6 +12,7 @@ typealias ServerMessage = String
 typealias ServerCode = String
 typealias APIResponse = (Bool, ServerMessage?, ServerCode?) -> Void
 typealias APIServiceResponse = (Bool, BodyDataDictionary?, NSError?) -> Void
+typealias APIUserResponse = (Bool, ServerMessage?, ServerCode?, Users?) -> Void
 
 enum httpMethods: String{
     case post = "POST"

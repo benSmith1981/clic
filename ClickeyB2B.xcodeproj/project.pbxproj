@@ -32,6 +32,8 @@
 		9007DCE01D94192C0092AA9E /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 9007DCD81D94192C0092AA9E /* SVProgressHUD.m */; };
 		9007DCE11D94192C0092AA9E /* SVRadialGradientLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 9007DCDA1D94192C0092AA9E /* SVRadialGradientLayer.m */; };
 		9007DCE21D94192C0092AA9E /* Loader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9007DCDB1D94192C0092AA9E /* Loader.swift */; };
+		9007DCE91D9431A80092AA9E /* UserRequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9007DCE81D9431A80092AA9E /* UserRequestManager.swift */; };
+		9007DCEB1D9431B10092AA9E /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9007DCEA1D9431B10092AA9E /* Users.swift */; };
 		A3F6DCFD7C7020F26D9642EF /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9859F8F925869E564F1949C /* Pods.framework */; };
 /* End PBXBuildFile section */
 
@@ -72,6 +74,8 @@
 		9007DCD91D94192C0092AA9E /* SVRadialGradientLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SVRadialGradientLayer.h; path = SVProgressHUD/SVRadialGradientLayer.h; sourceTree = "<group>"; };
 		9007DCDA1D94192C0092AA9E /* SVRadialGradientLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SVRadialGradientLayer.m; path = SVProgressHUD/SVRadialGradientLayer.m; sourceTree = "<group>"; };
 		9007DCDB1D94192C0092AA9E /* Loader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Loader.swift; sourceTree = "<group>"; };
+		9007DCE81D9431A80092AA9E /* UserRequestManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserRequestManager.swift; sourceTree = "<group>"; };
+		9007DCEA1D9431B10092AA9E /* Users.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
 		B9859F8F925869E564F1949C /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -180,6 +184,7 @@
 		9007DCBB1D93FE620092AA9E /* DAOObjects */ = {
 			isa = PBXGroup;
 			children = (
+				9007DCEA1D9431B10092AA9E /* Users.swift */,
 			);
 			name = DAOObjects;
 			sourceTree = "<group>";
@@ -187,6 +192,7 @@
 		9007DCBC1D93FE6E0092AA9E /* Managers */ = {
 			isa = PBXGroup;
 			children = (
+				9007DCE81D9431A80092AA9E /* UserRequestManager.swift */,
 				9007DCBD1D93FE810092AA9E /* RequestResult.swift */,
 				9007DCA81D93F6C50092AA9E /* APIServiceManager.swift */,
 				9007DCA91D93F6C50092AA9E /* Manager.swift */,
@@ -396,6 +402,7 @@
 				9007DCB51D93FA1D0092AA9E /* KeychainManager.swift in Sources */,
 				9007DCCF1D9416940092AA9E /* TextFieldValidatorBehavior.swift in Sources */,
 				9007DCE21D94192C0092AA9E /* Loader.swift in Sources */,
+				9007DCE91D9431A80092AA9E /* UserRequestManager.swift in Sources */,
 				9007DCDE1D94192C0092AA9E /* SVProgressAnimatedView.m in Sources */,
 				9007DCCD1D9416940092AA9E /* TextFieldResponderBehavior.swift in Sources */,
 				9007DCE01D94192C0092AA9E /* SVProgressHUD.m in Sources */,
@@ -411,6 +418,7 @@
 				9007DCD01D9416940092AA9E /* ViewPositionKeyboardBehavior.swift in Sources */,
 				9007DCB41D93FA1D0092AA9E /* KeychainSwiftDistrib.swift in Sources */,
 				9007DCE11D94192C0092AA9E /* SVRadialGradientLayer.m in Sources */,
+				9007DCEB1D9431B10092AA9E /* Users.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

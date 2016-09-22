@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "BA33B08523A5D1209F0738D56222BA602E57D242",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "BA33B08523A5D1209F0738D56222BA602E57D242" : 0,
+    "789E184AE01DC162BDEA8787F6AF84B2420A7926" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "ACA7194D-0AE8-4F1D-9BAA-5402464A5D63",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "BA33B08523A5D1209F0738D56222BA602E57D242" : "ClickeyB2B\/",
+    "789E184AE01DC162BDEA8787F6AF84B2420A7926" : "IOSApps\/yona-app-ios\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "ClickeyB2B",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "ClickeyB2B.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/yonadev\/yona-app-ios.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "789E184AE01DC162BDEA8787F6AF84B2420A7926"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/benSmith1981\/clic.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "BA33B08523A5D1209F0738D56222BA602E57D242"
+    }
+  ]
+}

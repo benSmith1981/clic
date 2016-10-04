@@ -35,9 +35,15 @@ class LoginViewController: UIViewController , ClickeyServiceConsumer{
                 if result.isSuccess {
                     NSNotificationCenter.defaultCenter().postNotificationName("getDevices", object: nil)
                     NSNotificationCenter.defaultCenter().postNotificationName("registerForNotifications", object: nil)
+//                    self.performSegueWithIdentifier(R.segue.loginViewController.clickeyviewsegue, sender: self)
+
                 }
             }
         }
+    }
+    
+    @IBAction func register(sender: AnyObject?) {
+        self.performSegueWithIdentifier(R.segue.loginViewController.registeruser, sender: self)
     }
 
 }

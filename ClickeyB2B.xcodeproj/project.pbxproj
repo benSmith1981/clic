@@ -49,8 +49,8 @@
 		9007DD0E1D953B680092AA9E /* Extensions+Others.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9007DD0A1D953B680092AA9E /* Extensions+Others.swift */; };
 		9007DD101D953B930092AA9E /* SmartTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9007DD0F1D953B930092AA9E /* SmartTextField.swift */; };
 		9067F7A01DA3B8D40002FBA9 /* RegisterUserVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9067F79F1DA3B8D40002FBA9 /* RegisterUserVC.swift */; };
-		9067F7A21DA3C20A0002FBA9 /* ClickeyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9067F7A11DA3C20A0002FBA9 /* ClickeyViewController.xib */; };
 		9067F7A41DA3C3380002FBA9 /* ClickeyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9067F7A31DA3C3380002FBA9 /* ClickeyViewController.swift */; };
+		9067F7A91DA3EB830002FBA9 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9067F7A81DA3EB830002FBA9 /* R.generated.swift */; };
 		A3F6DCFD7C7020F26D9642EF /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9859F8F925869E564F1949C /* Pods.framework */; };
 /* End PBXBuildFile section */
 
@@ -108,8 +108,8 @@
 		9007DD0A1D953B680092AA9E /* Extensions+Others.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Extensions+Others.swift"; sourceTree = "<group>"; };
 		9007DD0F1D953B930092AA9E /* SmartTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SmartTextField.swift; sourceTree = "<group>"; };
 		9067F79F1DA3B8D40002FBA9 /* RegisterUserVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterUserVC.swift; sourceTree = "<group>"; };
-		9067F7A11DA3C20A0002FBA9 /* ClickeyViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ClickeyViewController.xib; sourceTree = "<group>"; };
 		9067F7A31DA3C3380002FBA9 /* ClickeyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClickeyViewController.swift; sourceTree = "<group>"; };
+		9067F7A81DA3EB830002FBA9 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
 		B9859F8F925869E564F1949C /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -159,11 +159,11 @@
 				9007DCA71D93F6B70092AA9E /* DataService */,
 				9007DC951D93ED1E0092AA9E /* AppDelegate.swift */,
 				9007DC971D93ED1E0092AA9E /* LoginViewController.swift */,
-				9067F7A11DA3C20A0002FBA9 /* ClickeyViewController.xib */,
 				9067F79F1DA3B8D40002FBA9 /* RegisterUserVC.swift */,
 				9007DD0F1D953B930092AA9E /* SmartTextField.swift */,
 				9007DC991D93ED1E0092AA9E /* Main.storyboard */,
 				9067F7A31DA3C3380002FBA9 /* ClickeyViewController.swift */,
+				9067F7A81DA3EB830002FBA9 /* R.generated.swift */,
 				9007DC9C1D93ED1E0092AA9E /* Assets.xcassets */,
 				9007DC9E1D93ED1E0092AA9E /* LaunchScreen.storyboard */,
 				9007DCA11D93ED1E0092AA9E /* Info.plist */,
@@ -356,6 +356,7 @@
 			buildConfigurationList = 9007DCA41D93ED1E0092AA9E /* Build configuration list for PBXNativeTarget "ClickeyB2B" */;
 			buildPhases = (
 				59065B0CE9AC95A9CD8C6591 /* Check Pods Manifest.lock */,
+				9067F7A71DA3E9560002FBA9 /* ShellScript */,
 				9007DC8E1D93ED1E0092AA9E /* Sources */,
 				9007DC8F1D93ED1E0092AA9E /* Frameworks */,
 				9007DC901D93ED1E0092AA9E /* Resources */,
@@ -410,7 +411,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				9007DCA01D93ED1E0092AA9E /* LaunchScreen.storyboard in Resources */,
-				9067F7A21DA3C20A0002FBA9 /* ClickeyViewController.xib in Resources */,
 				9007DC9D1D93ED1E0092AA9E /* Assets.xcassets in Resources */,
 				9007DC9B1D93ED1E0092AA9E /* Main.storyboard in Resources */,
 				9007DCDF1D94192C0092AA9E /* SVProgressHUD.bundle in Resources */,
@@ -449,6 +449,19 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		9067F7A71DA3E9560002FBA9 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$PODS_ROOT/R.swift/rswift\" \"$SRCROOT\"";
 		};
 		DFCF684C5F9F747E638C373A /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -499,6 +512,7 @@
 				9007DCB91D93FCD20092AA9E /* XTSettings.m in Sources */,
 				9007DCD11D9416940092AA9E /* ScrollingTriggerBehavior.swift in Sources */,
 				9007DCB01D93F8450092AA9E /* EnvironmentManager.m in Sources */,
+				9067F7A91DA3EB830002FBA9 /* R.generated.swift in Sources */,
 				9007DCCE1D9416940092AA9E /* TextFieldScrollBehavior.swift in Sources */,
 				9007DCF61D953A690092AA9E /* ClickeyConstants.swift in Sources */,
 				9007DD011D953B390092AA9E /* SubscriptionParser.swift in Sources */,

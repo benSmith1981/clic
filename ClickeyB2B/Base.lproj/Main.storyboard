@@ -74,8 +74,8 @@
                                         </constraints>
                                         <state key="normal" title="Login"/>
                                         <connections>
-                                            <action selector="register:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2px-Tu-qpN"/>
-                                            <segue destination="wpM-O4-9ra" kind="show" id="7CP-Vf-XkY"/>
+                                            <action selector="login:" destination="BYZ-38-t0r" eventType="touchUpInside" id="H7I-Le-enP"/>
+                                            <segue destination="wpM-O4-9ra" kind="show" identifier="clickeyviewsegue" id="7CP-Vf-XkY"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j6S-MA-g4b">

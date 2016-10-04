@@ -79,7 +79,12 @@ class APIServiceManager {
         let countryId = NSLocale.currentLocale().objectForKey(NSLocaleCountryCode) as! String
         let language = "\(langId)-\(countryId)"
         
-        let httpHeader = ["Content-Type": "application/json", "Accept-Language": language, "Yona-Password": yonaPassword]
+        let httpHeader =
+            ["content-type": "application/x-www-form-urlencoded",
+             "Accept": "application/json",
+             "Accept-Language": language,
+             "authorization": "Basic Y2xpY2tleS1hcHA6YXBwLWFjY2Vzcw==",
+             ]
         Manager.sharedInstance.makeRequest(path, body: body, httpMethod: httpMethod, httpHeader: httpHeader, onCompletion: onCompletion)
     }
     

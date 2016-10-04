@@ -52,7 +52,7 @@ class UserRequestManager{
      */
     func login(body: BodyDataDictionary, onCompletion: APIUserResponse) {
         //create a password for the user
-        var path = "" //not in user body need to hardcode
+        var path = "v1/oauth/details" //not in user body need to hardcode
         genericUserRequest(httpMethods.post, path: path, body: body, onCompletion: onCompletion)
     }
 

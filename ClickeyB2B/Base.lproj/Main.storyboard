@@ -188,10 +188,10 @@
             </objects>
             <point key="canvasLocation" x="2176" y="-213"/>
         </scene>
-        <!--Item 2-->
+        <!--ClickeyMapView-->
         <scene sceneID="LwQ-EC-xc2">
             <objects>
-                <viewController id="jdN-s1-pyb" sceneMemberID="viewController">
+                <viewController id="jdN-s1-pyb" userLabel="ClickeyMapView" customClass="ClickeyMapViewController" customModule="ClickeyB2B" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Bdh-0b-F7G"/>
                         <viewControllerLayoutGuide type="bottom" id="bPT-DV-EEm"/>
@@ -207,15 +207,18 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 2" id="eFR-fK-8kc"/>
+                    <connections>
+                        <outlet property="mapView" destination="PnG-7p-gb1" id="vpY-1Y-a3B"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cEd-1N-chn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2176" y="1210"/>
         </scene>
-        <!--Item 1-->
+        <!--ClickeyTableList-->
         <scene sceneID="N3s-nV-qXG">
             <objects>
-                <viewController id="Pn8-E3-DgC" sceneMemberID="viewController">
+                <viewController id="Pn8-E3-DgC" userLabel="ClickeyTableList" customClass="ClickeyListViewController" customModule="ClickeyB2B" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="U43-C1-CFV"/>
                         <viewControllerLayoutGuide type="bottom" id="z8b-ex-oxf"/>
@@ -227,20 +230,27 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ye6-V1-KZq">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="556"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="Pn8-E3-DgC" id="Nne-gV-6iE"/>
+                                    <outlet property="delegate" destination="Pn8-E3-DgC" id="P0o-Yo-ipA"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 1" id="k8S-pn-4p6"/>
+                    <connections>
+                        <outlet property="clickeyTable" destination="ye6-V1-KZq" id="Gdu-Cb-N0Q"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KNU-8F-Aqf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2176" y="550"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Clickey Tab Bar View Controller-->
         <scene sceneID="brp-dl-ovz">
             <objects>
-                <tabBarController id="wpM-O4-9ra" sceneMemberID="viewController">
+                <tabBarController id="wpM-O4-9ra" customClass="ClickeyTabBarViewController" customModule="ClickeyB2B" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" id="xbm-wv-h3V">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>

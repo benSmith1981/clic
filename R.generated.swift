@@ -24,16 +24,16 @@ struct R {
   }
   
   struct nib {
-    
+    static var clickeyTableViewCell: _R.nib._ClickeyTableViewCell { return _R.nib._ClickeyTableViewCell() }
   }
   
   struct reuseIdentifier {
-    
+    static var clickeyTableViewCell: ReuseIdentifier<ClickeyTableViewCell> { return ReuseIdentifier(identifier: "ClickeyTableViewCell") }
   }
   
   struct segue {
     struct loginViewController {
-      static var clickeyviewsegue: StoryboardSegueIdentifier<UIStoryboardSegue, LoginViewController, UITabBarController> { return StoryboardSegueIdentifier(identifier: "clickeyviewsegue") }
+      static var clickeyviewsegue: StoryboardSegueIdentifier<UIStoryboardSegue, LoginViewController, ClickeyTabBarViewController> { return StoryboardSegueIdentifier(identifier: "clickeyviewsegue") }
       static var registeruser: StoryboardSegueIdentifier<UIStoryboardSegue, LoginViewController, RegisterUserVC> { return StoryboardSegueIdentifier(identifier: "registeruser") }
     }
   }
@@ -71,7 +71,19 @@ struct _R {
   static var hostingBundle: NSBundle? { return NSBundle(identifier: "Mobiquity.ClickeyB2B") }
   
   struct nib {
-    
+    struct _ClickeyTableViewCell: NibResource, Reusable {
+      var instance: UINib { return UINib.init(nibName: "ClickeyTableViewCell", bundle: _R.hostingBundle) }
+      var name: String { return "ClickeyTableViewCell" }
+      var reuseIdentifier: ReuseIdentifier<ClickeyTableViewCell> { return ReuseIdentifier(identifier: "ClickeyTableViewCell") }
+      
+      func firstView(ownerOrNil: AnyObject?, options optionsOrNil: [NSObject : AnyObject]?) -> ClickeyTableViewCell? {
+        return instantiateWithOwner(ownerOrNil, options: optionsOrNil)[0] as? ClickeyTableViewCell
+      }
+      
+      func instantiateWithOwner(ownerOrNil: AnyObject?, options optionsOrNil: [NSObject : AnyObject]?) -> [AnyObject] {
+        return instance.instantiateWithOwner(ownerOrNil, options: optionsOrNil)
+      }
+    }
   }
 }
 

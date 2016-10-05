@@ -8,7 +8,7 @@
 
 import Foundation
 
-class ClickeyViewController: UITabBarController {
+class ClickeyTabBarViewController: UITabBarController {
     
     override func viewDidLoad() {
         super.viewDidLoad()

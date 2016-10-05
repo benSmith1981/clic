@@ -9,10 +9,12 @@
 import Foundation
 class ClickeyListViewController: UIViewController, ClickeyServiceConsumer, UITableViewDelegate, UITableViewDataSource {
     @IBOutlet var clickeyTable: UITableView?
-    var clickeyList = [ClickeyServerModel]()
+    var appDelegate: AppDelegate!
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+
         var nib = UINib(nibName: "ClickeyTableViewCell", bundle: nil)
         clickeyTable!.registerNib(nib, forCellReuseIdentifier: "ClickeyTableViewCell")
         
@@ -26,18 +28,18 @@ class ClickeyListViewController: UIViewController, ClickeyServiceConsumer, UITab
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         var topCell = (tableView.dequeueReusableCellWithIdentifier("ClickeyTableViewCell", forIndexPath: indexPath) as! ClickeyTableViewCell)
-        topCell.descriptionClickey?.text = self.clickeyList[indexPath.row].desc
+        topCell.descriptionClickey?.text = self.appDelegate.clickeyList[indexPath.row].desc
         return topCell
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.clickeyList.count
+        return self.appDelegate.clickeyList.count
     }
     
     func getDevices(){
         service.getClickeys { result in
             if let clickeys = result.object {
-                self.clickeyList = clickeys
+                self.appDelegate.clickeyList = clickeys
                 self.clickeyTable?.reloadData()
             }
         }

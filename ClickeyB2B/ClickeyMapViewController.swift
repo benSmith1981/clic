@@ -28,13 +28,10 @@ class ClickeyMapViewController: UIViewController, ClickeyServiceConsumer, MKMapV
             if let clickeys = result.object {
                 self.appDelegate.clickeyList = clickeys
                 for clickey in self.appDelegate.clickeyList {
-//                    if let coord = clickey.location {
-//                        let clickeyAnnotation = Clickey.init(title: clickey.name, locationName: clickey.desc , coordinate: coord.coordinate)
-//                        self.mapView?.addAnnotation(clickeyAnnotation)
-//                    }
-                    
-                    let clickeyAnnotation = Clickey.init(title: clickey.name, locationName: clickey.desc , coordinate: CLLocationCoordinate2DMake(52.1326, 5.2913))
-                    self.mapView?.addAnnotation(clickeyAnnotation)
+                    if let coord = clickey.location {
+                        let clickeyAnnotation = Clickey.init(title: clickey.name, locationName: clickey.desc , coordinate: coord.coordinate)
+                        self.mapView?.addAnnotation(clickeyAnnotation)
+                    }
                 }
             }
         }

@@ -12,13 +12,10 @@
 		9007DC9B1D93ED1E0092AA9E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9007DC991D93ED1E0092AA9E /* Main.storyboard */; };
 		9007DC9D1D93ED1E0092AA9E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9007DC9C1D93ED1E0092AA9E /* Assets.xcassets */; };
 		9007DCA01D93ED1E0092AA9E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9007DC9E1D93ED1E0092AA9E /* LaunchScreen.storyboard */; };
-		9007DCAA1D93F6C50092AA9E /* APIServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9007DCA81D93F6C50092AA9E /* APIServiceManager.swift */; };
-		9007DCAB1D93F6C50092AA9E /* Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9007DCA91D93F6C50092AA9E /* Manager.swift */; };
 		9007DCB01D93F8450092AA9E /* EnvironmentManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9007DCAF1D93F8450092AA9E /* EnvironmentManager.m */; };
 		9007DCB41D93FA1D0092AA9E /* KeychainSwiftDistrib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9007DCB21D93FA1D0092AA9E /* KeychainSwiftDistrib.swift */; };
 		9007DCB51D93FA1D0092AA9E /* KeychainManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9007DCB31D93FA1D0092AA9E /* KeychainManager.swift */; };
 		9007DCB91D93FCD20092AA9E /* XTSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 9007DCB81D93FCD20092AA9E /* XTSettings.m */; };
-		9007DCBE1D93FE810092AA9E /* RequestResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9007DCBD1D93FE810092AA9E /* RequestResult.swift */; };
 		9007DCCB1D9416940092AA9E /* NavigationHideScrollBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9007DCC11D9416940092AA9E /* NavigationHideScrollBehavior.swift */; };
 		9007DCCC1D9416940092AA9E /* Behavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9007DCC31D9416940092AA9E /* Behavior.swift */; };
 		9007DCCD1D9416940092AA9E /* TextFieldResponderBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9007DCC51D9416940092AA9E /* TextFieldResponderBehavior.swift */; };
@@ -32,8 +29,6 @@
 		9007DCE01D94192C0092AA9E /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 9007DCD81D94192C0092AA9E /* SVProgressHUD.m */; };
 		9007DCE11D94192C0092AA9E /* SVRadialGradientLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 9007DCDA1D94192C0092AA9E /* SVRadialGradientLayer.m */; };
 		9007DCE21D94192C0092AA9E /* Loader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9007DCDB1D94192C0092AA9E /* Loader.swift */; };
-		9007DCE91D9431A80092AA9E /* UserRequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9007DCE81D9431A80092AA9E /* UserRequestManager.swift */; };
-		9007DCEB1D9431B10092AA9E /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9007DCEA1D9431B10092AA9E /* Users.swift */; };
 		9007DCF41D953A690092AA9E /* BluetoothManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9007DCED1D953A690092AA9E /* BluetoothManager.swift */; };
 		9007DCF51D953A690092AA9E /* PeripheralManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9007DCEE1D953A690092AA9E /* PeripheralManager.swift */; };
 		9007DCF61D953A690092AA9E /* ClickeyConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9007DCEF1D953A690092AA9E /* ClickeyConstants.swift */; };
@@ -56,6 +51,7 @@
 		9067F7B61DA54DC30002FBA9 /* ClickeyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9067F7B41DA54DC30002FBA9 /* ClickeyTableViewCell.swift */; };
 		9067F7B71DA54DC30002FBA9 /* ClickeyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9067F7B51DA54DC30002FBA9 /* ClickeyTableViewCell.xib */; };
 		9067F7B91DA554D70002FBA9 /* Clickey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9067F7B81DA554D70002FBA9 /* Clickey.swift */; };
+		9067F7BB1DA6A1AF0002FBA9 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9067F7BA1DA6A1AF0002FBA9 /* Date.swift */; };
 		A3F6DCFD7C7020F26D9642EF /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9859F8F925869E564F1949C /* Pods.framework */; };
 /* End PBXBuildFile section */
 
@@ -69,8 +65,6 @@
 		9007DC9C1D93ED1E0092AA9E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9007DC9F1D93ED1E0092AA9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9007DCA11D93ED1E0092AA9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9007DCA81D93F6C50092AA9E /* APIServiceManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIServiceManager.swift; sourceTree = "<group>"; };
-		9007DCA91D93F6C50092AA9E /* Manager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Manager.swift; sourceTree = "<group>"; };
 		9007DCAD1D93F8450092AA9E /* ClickeyB2B-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ClickeyB2B-Bridging-Header.h"; sourceTree = "<group>"; };
 		9007DCAE1D93F8450092AA9E /* EnvironmentManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EnvironmentManager.h; sourceTree = "<group>"; };
 		9007DCAF1D93F8450092AA9E /* EnvironmentManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EnvironmentManager.m; sourceTree = "<group>"; };
@@ -78,7 +72,6 @@
 		9007DCB31D93FA1D0092AA9E /* KeychainManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainManager.swift; sourceTree = "<group>"; };
 		9007DCB71D93FCD20092AA9E /* XTSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XTSettings.h; sourceTree = "<group>"; };
 		9007DCB81D93FCD20092AA9E /* XTSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XTSettings.m; sourceTree = "<group>"; };
-		9007DCBD1D93FE810092AA9E /* RequestResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestResult.swift; sourceTree = "<group>"; };
 		9007DCC11D9416940092AA9E /* NavigationHideScrollBehavior.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationHideScrollBehavior.swift; sourceTree = "<group>"; };
 		9007DCC31D9416940092AA9E /* Behavior.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Behavior.swift; sourceTree = "<group>"; };
 		9007DCC51D9416940092AA9E /* TextFieldResponderBehavior.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldResponderBehavior.swift; sourceTree = "<group>"; };
@@ -96,8 +89,6 @@
 		9007DCD91D94192C0092AA9E /* SVRadialGradientLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SVRadialGradientLayer.h; path = SVProgressHUD/SVRadialGradientLayer.h; sourceTree = "<group>"; };
 		9007DCDA1D94192C0092AA9E /* SVRadialGradientLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SVRadialGradientLayer.m; path = SVProgressHUD/SVRadialGradientLayer.m; sourceTree = "<group>"; };
 		9007DCDB1D94192C0092AA9E /* Loader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Loader.swift; sourceTree = "<group>"; };
-		9007DCE81D9431A80092AA9E /* UserRequestManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserRequestManager.swift; sourceTree = "<group>"; };
-		9007DCEA1D9431B10092AA9E /* Users.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
 		9007DCED1D953A690092AA9E /* BluetoothManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BluetoothManager.swift; sourceTree = "<group>"; };
 		9007DCEE1D953A690092AA9E /* PeripheralManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeripheralManager.swift; sourceTree = "<group>"; };
 		9007DCEF1D953A690092AA9E /* ClickeyConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClickeyConstants.swift; sourceTree = "<group>"; };
@@ -120,6 +111,7 @@
 		9067F7B41DA54DC30002FBA9 /* ClickeyTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClickeyTableViewCell.swift; sourceTree = "<group>"; };
 		9067F7B51DA54DC30002FBA9 /* ClickeyTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ClickeyTableViewCell.xib; sourceTree = "<group>"; };
 		9067F7B81DA554D70002FBA9 /* Clickey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Clickey.swift; sourceTree = "<group>"; };
+		9067F7BA1DA6A1AF0002FBA9 /* Date.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Date.swift; path = "../../IOSApps/yona-app-ios/Yona/Yona/Date.swift"; sourceTree = "<group>"; };
 		B9859F8F925869E564F1949C /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -190,8 +182,6 @@
 			children = (
 				9007DCFB1D953B1D0092AA9E /* Model */,
 				9007DCEC1D953A5E0092AA9E /* Services */,
-				9007DCBC1D93FE6E0092AA9E /* Managers */,
-				9007DCBB1D93FE620092AA9E /* DAOObjects */,
 			);
 			path = DataService;
 			sourceTree = "<group>";
@@ -234,25 +224,6 @@
 				9007DCAF1D93F8450092AA9E /* EnvironmentManager.m */,
 			);
 			name = EnvironmentManager;
-			sourceTree = "<group>";
-		};
-		9007DCBB1D93FE620092AA9E /* DAOObjects */ = {
-			isa = PBXGroup;
-			children = (
-				9007DCEA1D9431B10092AA9E /* Users.swift */,
-			);
-			name = DAOObjects;
-			sourceTree = "<group>";
-		};
-		9007DCBC1D93FE6E0092AA9E /* Managers */ = {
-			isa = PBXGroup;
-			children = (
-				9007DCE81D9431A80092AA9E /* UserRequestManager.swift */,
-				9007DCBD1D93FE810092AA9E /* RequestResult.swift */,
-				9007DCA81D93F6C50092AA9E /* APIServiceManager.swift */,
-				9007DCA91D93F6C50092AA9E /* Manager.swift */,
-			);
-			name = Managers;
 			sourceTree = "<group>";
 		};
 		9007DCBF1D9416940092AA9E /* Behaviors */ = {
@@ -348,6 +319,7 @@
 		9007DD061D953B600092AA9E /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				9067F7BA1DA6A1AF0002FBA9 /* Date.swift */,
 				9007DD0F1D953B930092AA9E /* SmartTextField.swift */,
 				9007DD0A1D953B680092AA9E /* Extensions+Others.swift */,
 			);
@@ -508,13 +480,12 @@
 				9067F7B91DA554D70002FBA9 /* Clickey.swift in Sources */,
 				9007DD051D953B390092AA9E /* SubscriptionSchemeModel.swift in Sources */,
 				9007DD021D953B390092AA9E /* ClickeyModel.swift in Sources */,
-				9007DCAA1D93F6C50092AA9E /* APIServiceManager.swift in Sources */,
 				9007DCCB1D9416940092AA9E /* NavigationHideScrollBehavior.swift in Sources */,
 				9007DCB51D93FA1D0092AA9E /* KeychainManager.swift in Sources */,
 				9067F7A01DA3B8D40002FBA9 /* RegisterUserVC.swift in Sources */,
 				9007DCCF1D9416940092AA9E /* TextFieldValidatorBehavior.swift in Sources */,
+				9067F7BB1DA6A1AF0002FBA9 /* Date.swift in Sources */,
 				9007DCE21D94192C0092AA9E /* Loader.swift in Sources */,
-				9007DCE91D9431A80092AA9E /* UserRequestManager.swift in Sources */,
 				9007DCDE1D94192C0092AA9E /* SVProgressAnimatedView.m in Sources */,
 				9007DCCD1D9416940092AA9E /* TextFieldResponderBehavior.swift in Sources */,
 				9007DCE01D94192C0092AA9E /* SVProgressHUD.m in Sources */,
@@ -522,7 +493,6 @@
 				9007DD031D953B390092AA9E /* ClickeyServerModel.swift in Sources */,
 				9007DCDD1D94192C0092AA9E /* SVIndefiniteAnimatedView.m in Sources */,
 				9007DCF71D953A690092AA9E /* ClickeyService.swift in Sources */,
-				9007DCBE1D93FE810092AA9E /* RequestResult.swift in Sources */,
 				9007DD101D953B930092AA9E /* SmartTextField.swift in Sources */,
 				9007DCCC1D9416940092AA9E /* Behavior.swift in Sources */,
 				9007DC961D93ED1E0092AA9E /* AppDelegate.swift in Sources */,
@@ -536,14 +506,12 @@
 				9067F7AB1DA513FC0002FBA9 /* ClickeyListTableView.swift in Sources */,
 				9007DCF61D953A690092AA9E /* ClickeyConstants.swift in Sources */,
 				9007DD011D953B390092AA9E /* SubscriptionParser.swift in Sources */,
-				9007DCAB1D93F6C50092AA9E /* Manager.swift in Sources */,
 				9007DCD01D9416940092AA9E /* ViewPositionKeyboardBehavior.swift in Sources */,
 				9007DCB41D93FA1D0092AA9E /* KeychainSwiftDistrib.swift in Sources */,
 				9007DCE11D94192C0092AA9E /* SVRadialGradientLayer.m in Sources */,
 				9007DCFA1D953A690092AA9E /* ValidationService.swift in Sources */,
 				9007DCF91D953A690092AA9E /* ClickeyServiceImplementation.swift in Sources */,
 				9007DCF81D953A690092AA9E /* ClickeyServiceMock.swift in Sources */,
-				9007DCEB1D9431B10092AA9E /* Users.swift in Sources */,
 				9007DD0E1D953B680092AA9E /* Extensions+Others.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

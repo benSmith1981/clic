@@ -30,7 +30,7 @@ class ClickeyServerModel: NSObject {
     var location: CLLocation!
     var locationRequestTime: NSDate!
     var isHistoricalLocation: Bool!
-    
+
     init(id:Int, name:String, desc:String, uuid:String, eui:String, icon:String, deleted:Bool, status:ClickeyStatus, userAccountId:Int){
         self.id = id
         self.name = name
@@ -54,18 +54,52 @@ class ClickeyServerModel: NSObject {
             if let clickeyID = clickey["id"] as? Int,
                 clickeyUUID = clickey["uuid"] as? String,
                 clickeyEUI = clickey["eui"] as? String{
-                    let model = ClickeyServerModel(id:clickeyID, name: (name is NSNull) ? "Clickey" : name as! String,
-                        desc: (desc is NSNull) ? "" : desc as! String,
-                        uuid: clickeyUUID,
-                        eui: clickeyEUI,
-                        icon: icon,
-                        deleted:isDeleted, status: ClickeyStatus(rawValue: status)!,
-                        userAccountId: userAccountId)
-                    if let imageUrl = json["imageUrl"] as? String{
-                        model.imageUrl = imageUrl
-                    }
+                let model = ClickeyServerModel(id:clickeyID, name: (name is NSNull) ? "Clickey" : name as! String,
+                                               desc: (desc is NSNull) ? "" : desc as! String,
+                                               uuid: clickeyUUID,
+                                               eui: clickeyEUI,
+                                               icon: icon,
+                                               deleted:isDeleted, status: ClickeyStatus(rawValue: status)!,
+                                               userAccountId: userAccountId)
+                if let imageUrl = json["imageUrl"] as? String{
+                    model.imageUrl = imageUrl
+                }
+                if let clickeyLatestState = json["clickeyLatestState"] as? NSDictionary,
+//                    batteryStatus = clickeyLatestState["batteryNotificationStatus"] as? String,
+                    latestMessages = clickeyLatestState["latestMessages"] as? NSDictionary{
+  
+                        var keys = latestMessages.allKeys as! [String]
+                        var tempDate: NSDate! = nil
+                        for key in keys {
+                            if let message = latestMessages[key],
+                                stringDate = message["receivedDate"] as? String {
+                                let dateFormatter = NSDateFormatter()
+                                dateFormatter.dateFormat = "YYYY-MM-dd'T'HH:mm:ss.SSZZZ"
+                                if let aDate = dateFormatter.dateFromString(stringDate) {
+                                    print(aDate)
+//                                    if aDate.isGreaterThanDate(tempDate){
+//                                        if let latitude = message["latitude"] as? Double,
+//                                            longitude = message["longitude"] as? Double {
+//                                                var longitudeNew = latitude
+//                                                var latitudeNew = longitude
+//                                            
+//                                        }
+//                                    }
+//                            
+                                }
+                                if let latitude = message["latitude"] as? Double,
+                                    longitude = message["longitude"] as? Double {
+                                    model.location = CLLocation.init(latitude: latitude, longitude: longitude)
+                                }
+                            }
+                        
+                        }
+
+                }
+
                 return model
             }
+
         }
         return nil
     }

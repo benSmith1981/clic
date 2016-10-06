@@ -12,13 +12,13 @@ import MapKit
 private extension ClickeyService {
     var restPath:       String { return "rest/v1/" }
     var clickeyPref:       String { return "clickey/" }
-    
+    var clickeyStatus: String { return "?states=true" }
     //Authentication
     var oAuthTokenURL:  String { return Constants.baseURL + "oauth/token" }
     var logoutURL:  String { return Constants.baseURL + restPath + "oauth/logout/" }
     
     //Clickey Management
-    var clickeyListURL: String { return Constants.baseURL + restPath + clickeyPref + "overview"}
+    var clickeyListURL: String { return Constants.baseURL + restPath + clickeyPref + "overview?states=true" }
     func startBLEURL(id:Int) -> String { return Constants.baseURL + restPath + clickeyPref + String(id) + "/bluetooth/start" }
     func stopBLEURL(id:Int) -> String { return Constants.baseURL + restPath + clickeyPref + String(id) + "/bluetooth/stop" }
     func locationURL(id:Int) -> String { return Constants.baseURL + restPath + clickeyPref + String(id) + "/location" }

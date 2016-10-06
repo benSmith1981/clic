@@ -45,22 +45,26 @@ class ClickeyServerModel: NSObject {
     
     class func parse(json:NSDictionary) -> ClickeyServerModel?{
         if let clickey = json["clickey"] as? NSDictionary,
-            name = json["name"],
-            desc = json["description"],
-            icon = json["icon"] as? String,
-            isDeleted = json["isDeleted"] as? Bool,
-            userAccountId = json["userAccountId"] as? Int,
-            status =  json["status"] as? String{
-            if let clickeyID = clickey["id"] as? Int,
-                clickeyUUID = clickey["uuid"] as? String,
-                clickeyEUI = clickey["eui"] as? String{
-                let model = ClickeyServerModel(id:clickeyID, name: (name is NSNull) ? "Clickey" : name as! String,
-                                               desc: (desc is NSNull) ? "" : desc as! String,
-                                               uuid: clickeyUUID,
-                                               eui: clickeyEUI,
-                                               icon: icon,
-                                               deleted:isDeleted, status: ClickeyStatus(rawValue: status)!,
-                                               userAccountId: userAccountId)
+            name = (json["name"] is NSNull) ? "Clickey" : (json["name"] as? String),
+            desc = (json["description"] is NSNull) ? "" : (json["description"] as? String){
+//            icon = json["icon"] as? String,
+//            isDeleted = json["isDeleted"] as? Bool,
+//            userAccountId = json["userAccountId"] as? Int ,
+//            status =  json["status"] as? String{
+            print("clickey" + (name as! String))
+
+            if let clickeyID = clickey["id"] as? Int{
+//                clickeyUUID = clickey["uuid"] as? String,
+//                clickeyEUI = clickey["eui"] as? String{
+                let model = ClickeyServerModel(id:clickeyID,
+                                               name: name,
+                                               desc: desc,
+                                               uuid: "",
+                                               eui: "",
+                                               icon: "",
+                                               deleted:false,
+                                               status: ClickeyStatus.ACTIVE,
+                                               userAccountId: 1)
                 if let imageUrl = json["imageUrl"] as? String{
                     model.imageUrl = imageUrl
                 }
@@ -70,6 +74,7 @@ class ClickeyServerModel: NSObject {
   
                         var keys = latestMessages.allKeys as! [String]
                         var tempDate: NSDate! = nil
+                        print("location" + model.name)
                         for key in keys {
                             if let message = latestMessages[key],
                                 stringDate = message["receivedDate"] as? String {
@@ -96,7 +101,7 @@ class ClickeyServerModel: NSObject {
                         }
 
                 }
-
+                
                 return model
             }
 

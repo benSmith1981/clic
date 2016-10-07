@@ -218,6 +218,24 @@
             </objects>
             <point key="canvasLocation" x="2176" y="1210"/>
         </scene>
+        <!--Clickey Detail View-->
+        <scene sceneID="vmR-Gr-XPf">
+            <objects>
+                <viewController id="vST-9L-YEz" customClass="ClickeyDetailView" customModule="ClickeyB2B" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="QDa-Hd-eLv"/>
+                        <viewControllerLayoutGuide type="bottom" id="63D-4K-gYz"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ek0-Dd-9Iv">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="o9M-jv-42G" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2914" y="860"/>
+        </scene>
         <!--ClickeyTableList-->
         <scene sceneID="N3s-nV-qXG">
             <objects>

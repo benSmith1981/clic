@@ -74,11 +74,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ClickeyB2B/DataService/ClickeyServerModel.swift"
-            timestampString = "497463477.364303"
+            timestampString = "497545695.193807"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "105"
-            endingLineNumber = "105"
+            startingLineNumber = "115"
+            endingLineNumber = "115"
             landmarkName = "parse(_:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -90,11 +90,27 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ClickeyB2B/DataService/ClickeyServerModel.swift"
-            timestampString = "497463477.364303"
+            timestampString = "497544243.395014"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "95"
-            endingLineNumber = "95"
+            startingLineNumber = "146"
+            endingLineNumber = "146"
+            landmarkName = "parse(_:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ClickeyB2B/DataService/ClickeyServerModel.swift"
+            timestampString = "497545695.193807"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "122"
+            endingLineNumber = "122"
             landmarkName = "parse(_:)"
             landmarkType = "5">
             <Locations>
@@ -106,12 +122,12 @@
                   moduleName = "ClickeyB2B"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/bensmith/Documents/ClickeyB2B/ClickeyB2B/DataService/ClickeyServerModel.swift"
-                  timestampString = "497463624.702412"
+                  timestampString = "497545696.304686"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "95"
-                  endingLineNumber = "95"
-                  offsetFromSymbolStart = "7661">
+                  startingLineNumber = "122"
+                  endingLineNumber = "122"
+                  offsetFromSymbolStart = "12425">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -121,12 +137,12 @@
                   moduleName = "ClickeyB2B"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/bensmith/Documents/ClickeyB2B/ClickeyB2B/DataService/ClickeyServerModel.swift"
-                  timestampString = "497463624.702517"
+                  timestampString = "497545696.304779"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "95"
-                  endingLineNumber = "95"
-                  offsetFromSymbolStart = "8237">
+                  startingLineNumber = "122"
+                  endingLineNumber = "122"
+                  offsetFromSymbolStart = "12928">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -138,11 +154,59 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ClickeyB2B/DataService/ClickeyServerModel.swift"
-            timestampString = "497462972.245952"
+            timestampString = "497545695.193807"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "56"
-            endingLineNumber = "56"
+            startingLineNumber = "109"
+            endingLineNumber = "109"
+            landmarkName = "parse(_:)"
+            landmarkType = "5">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "static ClickeyB2B.ClickeyServerModel.parse (__ObjC.NSDictionary) -&gt; Swift.Optional&lt;ClickeyB2B.ClickeyServerModel&gt;"
+                  moduleName = "ClickeyB2B"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/bensmith/Documents/ClickeyB2B/ClickeyB2B/DataService/ClickeyServerModel.swift"
+                  timestampString = "497545696.30545"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "109"
+                  endingLineNumber = "109"
+                  offsetFromSymbolStart = "9213">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "static ClickeyB2B.ClickeyServerModel.parse (__ObjC.NSDictionary) -&gt; Swift.Optional&lt;ClickeyB2B.ClickeyServerModel&gt;"
+                  moduleName = "ClickeyB2B"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/bensmith/Documents/ClickeyB2B/ClickeyB2B/DataService/ClickeyServerModel.swift"
+                  timestampString = "497545696.305546"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "109"
+                  endingLineNumber = "109"
+                  offsetFromSymbolStart = "9509">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ClickeyB2B/DataService/ClickeyServerModel.swift"
+            timestampString = "497545695.193807"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "165"
+            endingLineNumber = "165"
             landmarkName = "parse(_:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -154,11 +218,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ClickeyB2B/DataService/ClickeyServerModel.swift"
-            timestampString = "497463477.364303"
+            timestampString = "497545695.193807"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "97"
-            endingLineNumber = "97"
+            startingLineNumber = "57"
+            endingLineNumber = "57"
             landmarkName = "parse(_:)"
             landmarkType = "5">
          </BreakpointContent>

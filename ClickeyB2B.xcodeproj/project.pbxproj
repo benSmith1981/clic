@@ -43,6 +43,8 @@
 		9007DD051D953B390092AA9E /* SubscriptionSchemeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9007DD001D953B390092AA9E /* SubscriptionSchemeModel.swift */; };
 		9007DD0E1D953B680092AA9E /* Extensions+Others.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9007DD0A1D953B680092AA9E /* Extensions+Others.swift */; };
 		9007DD101D953B930092AA9E /* SmartTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9007DD0F1D953B930092AA9E /* SmartTextField.swift */; };
+		906485C21DA7D067004BE5B7 /* ClickeyDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 906485C11DA7D067004BE5B7 /* ClickeyDetailView.swift */; };
+		906485C41DA7F146004BE5B7 /* ClickeyPayloadModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 906485C31DA7F146004BE5B7 /* ClickeyPayloadModel.swift */; };
 		9067F7A01DA3B8D40002FBA9 /* RegisterUserVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9067F79F1DA3B8D40002FBA9 /* RegisterUserVC.swift */; };
 		9067F7A41DA3C3380002FBA9 /* ClickeyTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9067F7A31DA3C3380002FBA9 /* ClickeyTabBarViewController.swift */; };
 		9067F7A91DA3EB830002FBA9 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9067F7A81DA3EB830002FBA9 /* R.generated.swift */; };
@@ -103,6 +105,8 @@
 		9007DD001D953B390092AA9E /* SubscriptionSchemeModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubscriptionSchemeModel.swift; sourceTree = "<group>"; };
 		9007DD0A1D953B680092AA9E /* Extensions+Others.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Extensions+Others.swift"; sourceTree = "<group>"; };
 		9007DD0F1D953B930092AA9E /* SmartTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SmartTextField.swift; sourceTree = "<group>"; };
+		906485C11DA7D067004BE5B7 /* ClickeyDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClickeyDetailView.swift; sourceTree = "<group>"; };
+		906485C31DA7F146004BE5B7 /* ClickeyPayloadModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClickeyPayloadModel.swift; sourceTree = "<group>"; };
 		9067F79F1DA3B8D40002FBA9 /* RegisterUserVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterUserVC.swift; sourceTree = "<group>"; };
 		9067F7A31DA3C3380002FBA9 /* ClickeyTabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClickeyTabBarViewController.swift; sourceTree = "<group>"; };
 		9067F7A81DA3EB830002FBA9 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
@@ -164,6 +168,7 @@
 				9067F79F1DA3B8D40002FBA9 /* RegisterUserVC.swift */,
 				9067F7A31DA3C3380002FBA9 /* ClickeyTabBarViewController.swift */,
 				9067F7AA1DA513FC0002FBA9 /* ClickeyListTableView.swift */,
+				906485C11DA7D067004BE5B7 /* ClickeyDetailView.swift */,
 				9067F7AC1DA5213B0002FBA9 /* ClickeyMapViewController.swift */,
 				9067F7B41DA54DC30002FBA9 /* ClickeyTableViewCell.swift */,
 				9067F7B81DA554D70002FBA9 /* Clickey.swift */,
@@ -311,6 +316,7 @@
 				9007DCFD1D953B390092AA9E /* ClickeyModel.swift */,
 				9007DCFE1D953B390092AA9E /* ClickeyServerModel.swift */,
 				9007DCFF1D953B390092AA9E /* SubscriptionModel.swift */,
+				906485C31DA7F146004BE5B7 /* ClickeyPayloadModel.swift */,
 				9007DD001D953B390092AA9E /* SubscriptionSchemeModel.swift */,
 			);
 			name = Model;
@@ -485,6 +491,7 @@
 				9067F7A01DA3B8D40002FBA9 /* RegisterUserVC.swift in Sources */,
 				9007DCCF1D9416940092AA9E /* TextFieldValidatorBehavior.swift in Sources */,
 				9067F7BB1DA6A1AF0002FBA9 /* Date.swift in Sources */,
+				906485C21DA7D067004BE5B7 /* ClickeyDetailView.swift in Sources */,
 				9007DCE21D94192C0092AA9E /* Loader.swift in Sources */,
 				9007DCDE1D94192C0092AA9E /* SVProgressAnimatedView.m in Sources */,
 				9007DCCD1D9416940092AA9E /* TextFieldResponderBehavior.swift in Sources */,
@@ -499,6 +506,7 @@
 				9067F7AD1DA5213B0002FBA9 /* ClickeyMapViewController.swift in Sources */,
 				9007DCB91D93FCD20092AA9E /* XTSettings.m in Sources */,
 				9007DCD11D9416940092AA9E /* ScrollingTriggerBehavior.swift in Sources */,
+				906485C41DA7F146004BE5B7 /* ClickeyPayloadModel.swift in Sources */,
 				9007DCB01D93F8450092AA9E /* EnvironmentManager.m in Sources */,
 				9067F7A91DA3EB830002FBA9 /* R.generated.swift in Sources */,
 				9067F7B61DA54DC30002FBA9 /* ClickeyTableViewCell.swift in Sources */,

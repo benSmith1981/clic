@@ -31,7 +31,8 @@ class ClickeyServerModel: NSObject {
     var locationRequestTime: NSDate!
     var isHistoricalLocation: Bool!
 
-    init(id:Int, name:String, desc:String, uuid:String, eui:String, icon:String, deleted:Bool, status:ClickeyStatus, userAccountId:Int){
+    
+    init(id:Int, name:String, desc:String, uuid:String, eui:String, icon:String, deleted:Bool, status:ClickeyStatus, userAccountId:Int, temperature: String, batteryLevel: String){
         self.id = id
         self.name = name
         self.desc = desc
@@ -64,7 +65,9 @@ class ClickeyServerModel: NSObject {
                                                icon: "",
                                                deleted:false,
                                                status: ClickeyStatus.ACTIVE,
-                                               userAccountId: 1)
+                                               userAccountId: 1,
+                                               temperature: "",
+                                               batteryLevel: "")
                 if let imageUrl = json["imageUrl"] as? String{
                     model.imageUrl = imageUrl
                 }
@@ -73,25 +76,26 @@ class ClickeyServerModel: NSObject {
                     latestMessages = clickeyLatestState["latestMessages"] as? NSDictionary{
   
                         var keys = latestMessages.allKeys as! [String]
-                        var tempDate: NSDate! = nil
+                        var tempDate: NSDate = NSDate()
                         print("location" + model.name)
                         for key in keys {
                             if let message = latestMessages[key],
                                 stringDate = message["receivedDate"] as? String {
                                 let dateFormatter = NSDateFormatter()
-                                dateFormatter.dateFormat = "YYYY-MM-dd'T'HH:mm:ss.SSZZZ"
-                                if let aDate = dateFormatter.dateFromString(stringDate) {
-                                    print(aDate)
-//                                    if aDate.isGreaterThanDate(tempDate){
+                                dateFormatter.calendar = NSCalendar(calendarIdentifier: NSCalendarIdentifierGregorian)
+                                dateFormatter.locale = NSLocale(localeIdentifier: "en_US_POSIX")
+                                dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
+                                
+//                                if let aDate = dateFormatter.dateFromString(stringDate) {
+//                                    print(aDate)
+//                                    if tempDate.isGreaterThanDate(aDate){
 //                                        if let latitude = message["latitude"] as? Double,
 //                                            longitude = message["longitude"] as? Double {
-//                                                var longitudeNew = latitude
-//                                                var latitudeNew = longitude
-//                                            
+//                                                model.location = CLLocation.init(latitude: latitude, longitude: longitude)
 //                                        }
+//                                        tempDate = aDate
 //                                    }
-//                            
-                                }
+//                                }
                                 if let latitude = message["latitude"] as? Double,
                                     longitude = message["longitude"] as? Double {
                                     model.location = CLLocation.init(latitude: latitude, longitude: longitude)
@@ -99,6 +103,67 @@ class ClickeyServerModel: NSObject {
                             }
                         
                         }
+
+                }
+                
+                if let latestInterpretedPayloads = json["latestInterpretedPayloads"] as? NSDictionary{
+                    var keys = latestInterpretedPayloads.allKeys as! [String]
+                    if keys.count > 0 {
+                        for key in keys {
+                            if let payloads = latestInterpretedPayloads[key] {
+                                keys = payloads.allKeys as! [String]
+                                if keys.count > 0 {
+                                    for key in keys {
+                                        if let payload = payloads[key] as? NSDictionary {
+                                            switch key {
+                                            case "Analog":
+                                                break
+                                            case "Battery":
+                                                if let value = payload.objectForKey("value") as? String,
+                                                    unit = payload.objectForKey("unit") as? String{
+//                                                    model.batteryLevel = value + unit
+                                                    print(payload.objectForKey("value"))
+                                                    print(payload.objectForKey("unit"))
+                                                }
+                                                
+                                                break
+                                            case "Temperatuur":
+                                                break
+                                            case "Output 1":
+                                                break
+                                            case "Tilt 2":
+                                                break
+                                            case "Tilt 1":
+                                                break
+                                            case "Input 2":
+                                                break
+                                            case "Temperature":
+                                                if let value = payload.objectForKey("value") as? String,
+                                                    unit = payload.objectForKey("unit") as? String{
+                                                    //model.batteryLevel = value + unit
+                                                    print(payload.objectForKey("value"))
+                                                    print(payload.objectForKey("unit"))
+                                                }
+                                                
+                                                break
+                                            case "Input 1":
+                                                break
+                                            case "Output 1":
+                                                break
+
+                                            default:
+                                                break
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        
+
+                    } else {
+                        print(latestInterpretedPayloads)
+                    }
 
                 }
                 
